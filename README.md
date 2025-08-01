@@ -1,6 +1,6 @@
 # ParkEEGNet: A Transformer-based model for Parkinson's Disease Detection
 
-This repository contains the official implementation of the paper **"ParkEEGNet: A Deep Learning Framework for Parkinson's Disease Diagnosis via EEG Functional Connectivity and Spatio-Temporal Modeling"**, which is currently under review at *IEEE Transactions on Instrumentation and Measurement*.
+This repository contains the official implementation of the paper **"ParkEEGNet: A Deep Learning Framework for Parkinson's Disease Diagnosis via EEG Functional Connectivity and Spatio-Temporal Modeling"**.
 
 ![Graphical Abstract](https://github.com/mohammadrezashahsavari/ParkEEGNet/blob/main/Images%20&%20Diagrams/ParkEEGNET%20-%20Graphical%20Abstract.jpg?raw=true)
 
