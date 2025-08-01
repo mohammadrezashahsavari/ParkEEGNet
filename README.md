@@ -1,10 +1,11 @@
-# ParkEEGNet: A Deep Learning Framework for Parkinson's Disease Diagnosis via EEG Functional Connectivity and Spatio-Temporal Modeling
+# ParkEEGNet: A Transformer-based model for Parkinson's Disease Detection
 
 This repository contains the official implementation of the paper **"ParkEEGNet: A Deep Learning Framework for Parkinson's Disease Diagnosis via EEG Functional Connectivity and Spatio-Temporal Modeling"**, which is currently under review at *IEEE Transactions on Instrumentation and Measurement*.
 
----
+![Graphical Abstract](https://github.com/mohammadrezashahsavari/ParkEEGNet/blob/main/Images%20&%20Diagrams/ParkEEGNET%20-%20Graphical%20Abstract.jpg?raw=true)
 
-## Abstract
+---
+## Project Overview
 
 Accurate early-stage diagnosis of Parkinson's Disease (PD) remains a major challenge due to symptom variability and the absence of definitive biomarkers. While electroencephalography (EEG) offers a promising non-invasive diagnostic modality, existing EEG-based methods often rely on handcrafted features or limited spatio-temporal modeling, which restricts their performance and generalizability. We propose **ParkEEGNet**, a novel deep learning framework designed for automated PD detection using raw EEG signals.
 
@@ -21,7 +22,7 @@ The model was trained and validated using three publicly available datasets: UC 
 
 The proposed ParkEEGNet architecture consists of three main modules: the Cross-Channel Correlation (CCL) module, the Attentive Spatio-Temporal Representation Learning (ASTRL) module, and a final Classifier module.
 
-![Model Architecture](https://i.imgur.com/gK9J6aG.png)
+![Model Architecture](https://github.com/mohammadrezashahsavari/ParkEEGNet/blob/main/Images%20%26%20Diagrams/PD%20-%20Transformer%20-%20Model%20Architecture.jpg)
 *Figure 2 from the paper: An overview of the proposed deep learning architecture.*
 
 -   **Cross-Channel Correlation (CCL) Module**: This module uses multi-head self-attention to learn functional connectivity patterns between EEG channels. It processes a 2-second segment of 32-channel EEG data and outputs encoded data that incorporates information from other channels.
@@ -147,11 +148,11 @@ The interpretability of ParkEEGNet is one of its key features.
 
 -   **Functional Connectivity (from CCL module):** The model learns to distinguish between the functional connectivity patterns of healthy controls and PD patients. As shown below, PD patients exhibit reduced connectivity, particularly in the frontal, temporal, and parietal lobes.
 
-    ![Functional Connectivity](https://i.imgur.com/wWJsc9c.png)
+    ![Functional Connectivity](https://github.com/mohammadrezashahsavari/ParkEEGNet/blob/main/Images%20%26%20Diagrams/Healthy%20vs%20Parkinson%20Functional%20Connectivity.png)
     *Figure 3 from the paper: Functional connectivity maps for a healthy subject (left) and a PD patient (right).*
 
 -   **Additive Attention (from ASTRL module):** The attention maps highlight the specific time segments in the EEG signals that the model found most important for its diagnosis.
 
-    ![Additive Attention](https://i.imgur.com/kP8tJ5S.png)
+    ![Additive Attention](https://github.com/mohammadrezashahsavari/ParkEEGNet/blob/main/Images%20%26%20Diagrams/Aditive%20Attention%20Maps.png)
     *Figure 4 from the paper: Additive attention maps showing key time intervals for a healthy subject (left) and a PD patient (right).*
 
