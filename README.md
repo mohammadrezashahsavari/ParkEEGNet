@@ -77,7 +77,7 @@ This study utilized three publicly available EEG datasets:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/mohammadrezashahsavari/ParkEEGNet.git](https://github.com/mohammadrezashahsavari/ParkEEGNet.git)
+    git clone https://github.com/mohammadrezashahsavari/ParkEEGNet.git
     cd ParkEEGNet
     ```
 
